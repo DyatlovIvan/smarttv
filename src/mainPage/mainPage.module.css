@@ -1,9 +1,6 @@
 .mainPage{
     display: flex;
     justify-content:flex-end;
-
-
-
 }
 
 .banner{
@@ -15,6 +12,9 @@
     justify-content: flex-end;
     align-items: center;
     position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     background: #86D3F4;
 }
 

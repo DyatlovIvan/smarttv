@@ -1,5 +1,6 @@
 
 .phonePage{
+   position: absolute;
    width:100%;
    height: 100%;
 }
@@ -12,7 +13,7 @@
 
    position: absolute;
    width: 380px;
-   height: 721px;
+   height: 100%;
    /*left: 0px;*/
    /*top: -1px;*/
 
@@ -28,7 +29,7 @@
    font-weight: bold;
    font-size: 32px;
    line-height: 37px;
-   caret-color: transparent;
+   /*caret-color: transparent;*/
 }
 
 .btn{
@@ -41,8 +42,8 @@
    position: static;
    left: 34.51%;
    right: 34.51%;
-   top: 0%;
-   bottom: 0%;
+   top: 0;
+   bottom: 0;
 
 
    /* Inside auto layout */
@@ -50,5 +51,16 @@
    flex: none;
    order: 1;
    flex-grow: 0;
-   margin: 0px 10px;
+   margin: 1px 1px;
 }
+
+.btn:nth-of-type(10) {
+   grid-column: 1/3;
+}
+
+.keysDashboard{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   
+}
+
