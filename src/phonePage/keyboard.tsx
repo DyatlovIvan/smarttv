@@ -1,13 +1,13 @@
 import s from './phonePage.module.css'
 type KeyboardType = {
     value:string
-    class:string
+    currentValue:string
     onClickNumber:(value:string)=>void
 }
-export const Keyboard = ({value,onClickNumber,...props}:KeyboardType) =>{
+export const Keyboard = ({value,onClickNumber,currentValue}:KeyboardType) =>{
 
     return(
-        <button className={`${s.btn}`}
+        <button className={`${s.btn} ${value===currentValue?s.btnActive:''}`}
         onClick={()=>onClickNumber(value)}>
             {value}
         </button>
