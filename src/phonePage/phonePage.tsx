@@ -126,6 +126,9 @@ export const PhonePage = () => {
     const exitHandler = () => {
         navigation('/main')
     }
+    const setCurrentValueHandler = (value: string) => {
+        setCurrentValue(value)
+    }
     useEffect(() => {
         window.addEventListener("keydown", onKeyPressHandler)
         return () => {
@@ -140,7 +143,7 @@ export const PhonePage = () => {
             setPhoneNumber(phoneNumber.slice(0, -1))
         } else if (code === 'Enter') {
             setPhoneNumber(phoneNumber + currentValue)
-        }else if(code.replace(/[^a-zа-яё]/gi, '') ==='Digit'){
+        } else if (code.replace(/[^a-zа-яё]/gi, '') === 'Digit') {
             setPhoneNumber(phoneNumber + code.replace(/[^0-9]/g, ''))
         } else {
             if (commands[code]) {
@@ -152,27 +155,29 @@ export const PhonePage = () => {
 
     useEffect(() => {
         console.log(checkbox)
-        phoneNumber.length < 11 || !checkbox ? setDisabled(true) : setDisabled(false)
+        phoneNumber.length < 10 || !checkbox ? setDisabled(true) : setDisabled(false)
     }, [phoneNumber, checkbox])
     return (
         <div className={s.phonePage}
-             style={{background: `url(${img}) no-repeat center center/100%`}}>
+             style={{background: `url(${img}) no-repeat center center/100%`}}
+             onMouseDown={event => event.preventDefault()}>
 
             <div className={s.promo}>
                 <div className={s.title}>Введите ваш номер мобильного телефона</div>
                 <InputMask mask={'+7 (999) 999-99-99'}
-                          // onChange={onChangeInput}
+                    // onChange={onChangeInput}
                            value={phoneNumber}
                            className={s.inputMask}
                            alwaysShowMask
-                           />
+                />
                 <div className={s.text}>и с Вами свяжется наш менеждер для дальнейшей консультации</div>
                 <div className={s.keysDashboard}>
                     {btnData.filter(f => f.value !== 'accept' && f.value !== 'exit').map(btn => {
                         return <Keyboard key={btn.value}
                                          value={btn.value}
                                          currentValue={currentValue}
-                                         onClickNumber={onClickNumber}/>
+                                         onClickNumber={onClickNumber}
+                                         setCurrentValueHandler={setCurrentValueHandler}/>
                     })}
                 </div>
                 <div className={s.agreement}>

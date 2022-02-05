@@ -89,10 +89,10 @@
     flex-grow: 0;
     margin:  2px;
 }
-.btn:focus {
-    outline: none;
-    box-shadow: none;
-}
+/*.btn:focus {*/
+/*    outline: none;*/
+/*    box-shadow: none;*/
+/*}*/
 
 .btn:nth-of-type(10) {
     grid-column: 1/3;
