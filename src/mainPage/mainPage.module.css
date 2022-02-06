@@ -16,6 +16,19 @@
     top: 50%;
     transform: translateY(-50%);
     background: #86D3F4;
+    opacity:0;
+    transition: 1s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
 
 .topText{
