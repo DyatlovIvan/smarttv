@@ -122,14 +122,14 @@ export const PhonePage = () => {
                 :
                 <div className={s.promo}>
                     <div className={s.successTitle}>ЗАЯВКА ПРИНЯТА</div>
-                    <div className={s.text}>Держите телефон под рукой. Скоро с Вами свяжется наш менеджер.</div>
+                    <div className={`${s.successText} ${s.text}`}>Держите телефон под рукой.<br/> Скоро с Вами свяжется наш менеджер.</div>
                 </div>}
 
 
             <div className={s.buttonExitContainer}>
                 <button className={`${s.buttonExit} ${btnData[12].value === currentValue ? s.btnActive : ''}`}
                         onClick={PressExitHandler}>
-                    {btnData[12].value}
+                    X
                 </button>
             </div>
 

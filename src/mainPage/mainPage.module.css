@@ -1,9 +1,9 @@
-.mainPage{
+.mainPage {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
 
-.banner{
+.banner {
     width: 251px;
     height: 357px;
     padding: 30px 10px 10px 10px;
@@ -16,22 +16,23 @@
     top: 50%;
     transform: translateY(-50%);
     background: #86D3F4;
-    opacity:0;
+    opacity: 0;
     transition: 1s;
     animation: show 3s 1;
     animation-fill-mode: forwards;
     animation-delay: 5s;
 }
-@keyframes show{
-    0%{
-        opacity:0;
+
+@keyframes show {
+    0% {
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
 
-.topText{
+.topText {
     position: static;
     font-family: Roboto;
     font-style: normal;
@@ -43,15 +44,8 @@
 
     margin: 20px 0;
 }
-.botText{
-    position: static;
-    width: 126px;
-    height: 32px;
-    left: 62.5px;
-    top: 243px;
 
-    /* Sub text */
-
+.botText {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -60,18 +54,11 @@
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    margin: 20px 0px;
+    margin: 20px
 }
-.btn{
+
+.btn {
     color: #86D3F4;
     display: flex;
     flex-direction: row;
@@ -81,12 +68,6 @@
     position: static;
     width: 156px;
     height: 52px;
-    left: 47.5px;
-    top: 295px;
     background: #000000;
-
-    flex: none;
-    order: 4;
-    flex-grow: 0;
-    margin: 20px 0px;
+    margin: 20px;
 }

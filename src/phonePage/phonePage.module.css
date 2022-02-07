@@ -41,8 +41,8 @@
     caret-color: transparent;
     text-align: center;
 }
-.text{
 
+.text {
     font-size: 14px;
     line-height: 16px;
     display: flex;
@@ -59,11 +59,11 @@
     position: static;
     top: 0;
     bottom: 0;
-    background-color:#86D3F4;
+    background-color: #86D3F4;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin:  2px;
+    margin: 2px;
 }
 
 
@@ -83,6 +83,7 @@
 }
 
 .buttonExit {
+    font-size: 30px;
     width: 88px;
     height: 52px;
     Top: 52px;
@@ -94,34 +95,53 @@
     grid-template-columns: repeat(3, 1fr);
     min-width: 260px;
 }
-.agreement{
+
+.agreement {
     width: 200px;
 }
-.checkbox{
 
-}
-.agreementText{
-    position: static;
+.agreementText {
     font-size: 14px;
     line-height: 16px;
     display: flex;
     align-items: center;
     color: #565656;
-    margin: 0px 10px;
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-.successTitle{
+.checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    margin-right: 10px;
+}
 
+.checkbox:checked {
+    background-image: url('../components/pictures/check.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.successTitle {
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
     text-transform: uppercase;
-    margin: 1px 0px;
+    width: 200px;
 }
 
-.qrArea{
+.successText {
+    max-width: 400px;
+}
+
+.qrArea {
     display: inline-block;
     position: relative;
     bottom: -350px;
@@ -129,7 +149,8 @@
     color: white;
 }
 
-.successBtn{
+.successBtn {
     min-width: 260px;
 }
+
 
