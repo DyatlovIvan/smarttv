@@ -112,7 +112,7 @@ export const PhonePage = () => {
                         </label>
                     </div>
 
-                    <button className={`${s.btn} ${btnData[11].value === currentValue ? s.btnActive : ''}`}
+                    <button className={`${s.btn} ${s.successBtn} ${btnData[11].value === currentValue ? s.btnActive : ''}`}
                             onClick={PressAcceptHandler}
                             disabled={disabled}
                     >

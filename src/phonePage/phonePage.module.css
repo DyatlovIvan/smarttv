@@ -6,41 +6,25 @@
 }
 
 .promo {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*padding: 40px 24px;*/
-
     position: absolute;
     width: 380px;
     height: 100%;
-    /*left: 0px;*/
-    /*top: -1px;*/
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: #86D3F4;
 }
 
 .title {
-    position: static;
-    left: 14.21%;
-    right: 14.21%;
-    top: 9.99%;
-    bottom: 81.69%;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 26px;
     line-height: 30px;
     display: flex;
     align-items: center;
     text-align: center;
-
     flex: none;
-    order: 0;
     flex-grow: 0;
-    margin: 13px 0px;
+    margin: 13px;
 }
 
 .inputMask {
@@ -55,35 +39,27 @@
     font-size: 32px;
     line-height: 37px;
     caret-color: transparent;
+    text-align: center;
 }
 .text{
-    position: static;
-    left: 5.66%;
-    right: 5.66%;
-    top: 27.18%;
-    bottom: 68.38%;
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 14px;
     line-height: 16px;
     display: flex;
     align-items: center;
     text-align: center;
     flex: none;
-    order: 2;
     flex-grow: 0;
-    margin: 13px 0px;
+    margin: 13px;
+    max-width: 260px;
 }
 
 .btn {
     padding: 10px 10px 10px 10px;
-
     position: static;
     top: 0;
     bottom: 0;
     background-color:#86D3F4;
-
-
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -116,6 +92,7 @@
 .keysDashboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    min-width: 260px;
 }
 .agreement{
     width: 200px;
@@ -141,15 +118,18 @@
     line-height: 37px;
     text-align: center;
     text-transform: uppercase;
-
     margin: 1px 0px;
 }
 
 .qrArea{
-    display: flex;
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    align-items: flex-end;
+    display: inline-block;
+    position: relative;
+    bottom: -350px;
+    right: -450px;
+    color: white;
 }
 
+.successBtn{
+    min-width: 260px;
+}
 
