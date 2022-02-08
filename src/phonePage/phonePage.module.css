@@ -141,16 +141,41 @@
     max-width: 400px;
 }
 
-.qrArea {
-    display: inline-block;
-    position: relative;
-    bottom: -350px;
-    right: -450px;
-    color: white;
-}
-
 .successBtn {
     min-width: 260px;
 }
+
+.qrArea {
+    display: inline-block;
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    color: white;
+}
+
+.containerQR {
+    display: flex;
+    align-items: center;
+}
+
+.labelQr {
+    max-width: 160px;
+    text-align: right;
+    margin-right: 12px;
+}
+
+.qr {
+    width: 110px;
+    height: 110px;
+}
+
+.qrArea {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 
 

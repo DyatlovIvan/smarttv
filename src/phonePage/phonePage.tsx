@@ -112,9 +112,10 @@ export const PhonePage = () => {
                         </label>
                     </div>
 
-                    <button className={`${s.btn} ${s.successBtn} ${btnData[11].value === currentValue ? s.btnActive : ''}`}
-                            onClick={PressAcceptHandler}
-                            disabled={disabled}
+                    <button
+                        className={`${s.btn} ${s.successBtn} ${btnData[11].value === currentValue ? s.btnActive : ''}`}
+                        onClick={PressAcceptHandler}
+                        disabled={disabled}
                     >
                         Подтвердить номер
                     </button>
@@ -122,7 +123,9 @@ export const PhonePage = () => {
                 :
                 <div className={s.promo}>
                     <div className={s.successTitle}>ЗАЯВКА ПРИНЯТА</div>
-                    <div className={`${s.successText} ${s.text}`}>Держите телефон под рукой.<br/> Скоро с Вами свяжется наш менеджер.</div>
+                    <div className={`${s.successText} ${s.text}`}>Держите телефон под рукой.<br/> Скоро с Вами свяжется
+                        наш менеджер.
+                    </div>
                 </div>}
 
 
@@ -134,10 +137,10 @@ export const PhonePage = () => {
             </div>
 
             <div className={s.qrArea}>
-                <label>
-                    Сканируйте QR-код ДЛЯ ПОЛУЧЕНИЯ ДОПОЛНИТЕЛЬНОЙ ИНФОРМАЦИИ
-                    <img src={qr} alt="qr"/>
-                </label>
+                <div className={s.containerQR}>
+                    <label className={s.labelQr}>Сканируйте QR-код ДЛЯ ПОЛУЧЕНИЯ ДОПОЛНИТЕЛЬНОЙ ИНФОРМАЦИИ</label>
+                    <img className={s.qr} src={qr} alt="qr"/>
+                </div>
             </div>
         </div>
     )
