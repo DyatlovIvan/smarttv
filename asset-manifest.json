@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/smarttv/static/css/main.c79736e8.css",
+    "main.js": "/smarttv/static/js/main.326f26ad.js",
+    "static/js/787.e12d87f0.chunk.js": "/smarttv/static/js/787.e12d87f0.chunk.js",
+    "static/media/video.mp4": "/smarttv/static/media/video.74796462ee4bc93573a3.mp4",
+    "static/media/backgroundImg.jpg": "/smarttv/static/media/backgroundImg.1a6c7bad07360739eea0.jpg",
+    "static/media/check.png": "/smarttv/static/media/check.09178f0ef49e88ddfc50.png",
+    "index.html": "/smarttv/index.html",
+    "main.c79736e8.css.map": "/smarttv/static/css/main.c79736e8.css.map",
+    "main.326f26ad.js.map": "/smarttv/static/js/main.326f26ad.js.map",
+    "787.e12d87f0.chunk.js.map": "/smarttv/static/js/787.e12d87f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c79736e8.css",
+    "static/js/main.326f26ad.js"
+  ]
+}
