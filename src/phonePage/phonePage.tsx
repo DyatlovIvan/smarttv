@@ -2,7 +2,7 @@ import s from './phonePage.module.css'
 import img from '../components/pictures/backgroundImg.jpg'
 import qr from '../components/pictures/QR.png'
 import InputMask from 'react-input-mask';
-import {ChangeEvent, useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {Keyboard} from "./keyboard";
 import {useNavigate} from "react-router-dom";
 import {commands} from "../utils/commands";
@@ -32,12 +32,11 @@ export const PhonePage = () => {
         setCode(e.code)
     }
 
-    const checkboxHandler = (value: ChangeEvent<HTMLInputElement>) => {
+    const checkboxHandler = () => {
         setCheckbox(!checkbox)
     }
 
     const PressExitHandler = () => {
-        //setCurrentValueHandler('1')
         navigation(URLS.MAIN)
     }
 
@@ -76,7 +75,6 @@ export const PhonePage = () => {
     }, [code])
 
     useEffect(() => {
-        console.log(checkbox)
         phoneNumber.length < 10 || !checkbox ? setDisabled(true) : setDisabled(false)
     }, [phoneNumber, checkbox])
     return (
